@@ -222,7 +222,7 @@ def load_examples():
     else:
         input_paths = sorted(input_paths)
 
-    with tf.name_scope("load_images")
+    with tf.name_scope("load_images")#
         path_queue = tf.data.Dataset.from_tensor_slices(input_paths, shuffle=a.mode == "train") 
         reader = tf.WholeFileReader()
         paths, contents = reader.read(path_queue)
